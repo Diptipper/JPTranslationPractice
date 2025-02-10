@@ -20,7 +20,7 @@ python story_generator.py <your prompt> --long --api_key <your key> --model <gpt
 - `<your prompt>`: basic summary of the story you want
 - `--long`: This is optional. Omit it if you want a shorter story.
 - `--api_key <your key>`: the key you get from OpenAI (the long ass string)
-- `--model <gpt model>`: By default is `gpt-4o-mini`. It's a cheap model that does the job well enough.
+- `--model <gpt model>`: You can leave this blank. By default it's `gpt-4o-mini`. It's a cheap model that does the job well enough.
 
 Example:
 ```
