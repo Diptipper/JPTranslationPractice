@@ -1,0 +1,96 @@
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #eeeeee;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+p {
+    display: block;
+    text-align: center;
+    color: #545454;
+    font-size: 1.1em;
+    line-height: 1.7;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-top: 20px;
+    color: #1c3173;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e1e1e1;
+    margin: 20px 0;
+}
+
+note {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+note:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+}
+
+note:hover::before {
+    content: attr(value);
+    position: absolute;
+    top: -25px;
+    left: 0;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    white-space: nowrap;
+}
+
+content {
+      display: block; /* Makes the content tag behave like a block element */
+      width: 800px; /* Default width */
+      max-width: 100%; /* Ensures the box does not exceed the screen width */
+      padding: 100px; /* Add some padding for the content */
+      overflow: auto; /* To handle overflow if the content is too long */
+      text-align: left;
+      padding-top: 40px;
+      padding-bottom: 30px;
+    }
+
+.box {
+    text-align: left;
+    width: 800px;
+    height: auto;
+    padding: 100px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+    max-height: 0; /* Box is initially hidden */
+    padding-top: 0px;
+    padding-bottom: 0px;
+    color: #1c3173;
+}
+
+.toggle-btn {
+    padding: 10px 20px;
+    background-color: #287eb8;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.toggle-btn:hover {
+    background-color: #28a7b8;
+}
