@@ -51,7 +51,7 @@ def main():
 			translation = translation.replace("。",".")
 
 			with open(os.path.join(folder_name, "translate.txt"), "w", encoding="utf-8") as file:
-				file.write(output.replace("\n", os.linesep))
+				file.write(translation.replace("\n", os.linesep))
 		t1 = time.time()
 		print("[",t1-t0," s]")
 
